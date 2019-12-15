@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct ListView: View {
-    let names = ["Steve","Tim","Bob","tom"]
+    let names = ["Steve","Tim","Bob","Tom"]
     
     var body: some View {
         List (names, id: \.self) { name in
-            NavigationLink(destination:Text("Hi\(name)")) {
-                Image(systemName:"person.circle.fill")
+            NavigationLink(destination:Text("Hi \(name)")) {
+                Image(systemName: "person.circle.fill")
                 Text(name)
                 
          }
